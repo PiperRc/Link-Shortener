@@ -1,0 +1,141 @@
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+    
+    main {
+        width: 95%;
+        /* delele */
+        border: 1px solid green;
+        /* delete */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    html {
+        font-size: 62.5%;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+     :root {
+        /* Primary */
+        --cyan: hsl(180, 66%, 49%);
+        --dviolet: hsl(257, 27%, 26%);
+        /* Secondary */
+        --red: hsl(0, 87%, 67%);
+        /* Neutral */
+        --gray: hsl(0, 0%, 75%);
+        --gviolet: hsl(257, 7%, 63%);
+        --vdblue: hsl(255, 11%, 22%);
+        --vdviolet: hsl(260, 8%, 14%);
+    }
+    /* navbar */
+    
+    main section:nth-child(1) {
+        width: 100%;
+    }
+    
+    .navbar {
+        font-family: 'Poppins';
+        padding: 1rem;
+        padding-top: 2rem;
+    }
+    
+    .navbar-nav {
+        background-color: var(--dviolet);
+        text-align: center;
+        font-size: 2rem;
+    }
+    /* .navbar-toggler {
+    border: 2px solid green;
+} */
+    
+    .nav-link {
+        color: white !important;
+        padding: 2rem 0 2rem 0;
+    }
+    
+    .navbar-brand {
+        font-size: 3rem;
+    }
+    
+    .navbar-collapse {
+        display: flex;
+        justify-content: center;
+        background-color: var(--dviolet);
+        border-radius: 5px;
+        padding-bottom: 4rem;
+    }
+    
+    .navbar-links {
+        width: 90%;
+    }
+    
+    .navbar-nav-registration {
+        border-top: .5px solid var(--gray);
+    }
+    
+    .signup-link {
+        border-radius: 2.5rem;
+        background-color: var(--cyan);
+        padding: .5rem 0 .5rem 0;
+    }
+    /*navbar end */
+    /*  */
+    
+    .hero-img img {
+        width: 100%;
+    }
+    
+    .hero-img-removed {
+        position: absolute;
+        opacity: 0;
+    }
+    /* .header-padding-zero {
+        padding-top: 0;
+        margin: 0;
+    } */
+    
+    header h1 {
+        text-align: center;
+        font-size: 4rem;
+        padding-top: 2rem;
+    }
+    
+    header p {
+        text-align: center;
+        font-size: 1.8rem;
+        color: var(--gray)
+    }
+    
+    header div {
+        text-align: center;
+    }
+    
+    header a {
+        background-color: var(--cyan);
+        font-size: 2.5rem;
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        border-radius: 2.5rem;
+    }
+    
+    header {
+        padding-bottom: 7rem;
+    }
+    
+    .insert-link {
+        background-color: var(--dviolet);
+        width: 90%;
+    }
+    
+    .insert-link button {
+        display: block;
+    }

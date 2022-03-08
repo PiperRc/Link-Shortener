@@ -1,0 +1,59 @@
+using axios:
+
+    const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    getShortLink();
+})
+
+
+const getShortLink = async() => {
+    const input = document.querySelector('input');
+    const span = document.querySelector('span');
+    try {
+        const res = await axios.get(
+
+
+        );
+        span.innerHTML = res.data.result.full_short_link;
+    } catch (e) {
+        span.innerHTML = 'something went wrong'
+    }
+
+}
+
+__________________________________________
+using fetch:
+
+
+
+    const span = document.querySelector('span');
+
+const getShortLink = async() => {
+    const input = document.querySelector('input');
+
+    try {
+        const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${input.value}`);
+        const data = await response.json();
+        span.innerHTML = data.result.full_short_link;
+    } catch (error_code) {
+        span.innerHTML = 'Something went wrong';
+        console.log(error_code);
+    }
+}
+
+const shortenlink = document.querySelector('.shortenlink-btn');
+
+shortenlink.addEventListener('click', () => {
+    getShortLink();
+})
+
+
+const copy = document.querySelector('.copy-btn');
+
+const copyText = async() => {
+    await navigator.clipboard.writeText(span.textContent);
+}
+
+copy.addEventListener('click', () => {
+    copyText();
+})
