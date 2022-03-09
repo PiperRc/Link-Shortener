@@ -94,7 +94,7 @@
     .hero-img-removed {
         position: absolute;
         opacity: 0;
-        z-index:-1;
+        z-index: -1;
     }
     /* .header-padding-zero {
         padding-top: 0;
