@@ -7,7 +7,6 @@
                 }
                 
                 main {
-                  
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -99,9 +98,7 @@
                 /*  */
                 
                 .hero-img img {
-                    width: 140%;
-                    position: relative;
-                    left: 1rem;
+                    width: 100%;
                 }
                 
                 .hero-img-removed {
@@ -113,7 +110,7 @@
                 header h1 {
                     text-align: center;
                     font-size: 4rem;
-                    padding-top: 0rem;
+                    padding-top: 2rem;
                 }
                 
                 header p {
@@ -209,6 +206,7 @@
                     color: var(--gray);
                     font-weight: 500;
                 }
+                /*  */
                 
                 .features {
                     display: flex;
@@ -218,16 +216,34 @@
                     width: 100%;
                 }
                 
-                .brand {
-                    margin-bottom: 20rem;
+                .brand,
+                .detailed,
+                .custom {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 95%;
+                    background-color: white;
+                    padding-bottom: 2rem;
+                    margin-bottom: 8rem;
                 }
                 
-                .features .brand,
-                .features .detailed,
-                .features .custom {
-                    /* border: 1px solid red; */
-                    background-color: white;
-                    border-radius: .5rem;
+                .custom {
+                    margin-bottom: 0;
+                }
+                
+                .image-container {
+                    padding: 2rem;
+                    border-radius: 50%;
+                    background-color: var(--dviolet);
+                    position: relative;
+                    top: -3.8rem;
+                }
+                
+                .brand-content,
+                .detailed-content,
+                .custom-content {
+                    width: 85%;
                 }
                 
                 .features h2,
@@ -237,61 +253,12 @@
                 
                 .features h2 {
                     font-size: 2.3rem;
-                    padding-top: 6rem;
-                    padding-bottom: 2rem;
                 }
                 
                 .features p {
-                    font-size: 1.65rem;
-                    color: var(--gray);
+                    font-size: 1.61rem;
                 }
-                
-                .features div {
-                    margin-bottom: 3rem;
-                    width: 90%;
-                }
-                
-                .features .brand,
-                .features .detailed {
-                    margin-bottom: 10rem;
-                }
-                
-                .brand,
-                .detailed,
-                .custom {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-                
-                .brand,
-                .detailed,
-                .custom {
-                    position: relative;
-                }
-                
-                .brand .image-container,
-                .detailed .image-container,
-                .custom .image-container {
-                    position: absolute;
-                    background-color: var(--dviolet);
-                    text-align: center;
-                    width: 8rem;
-                    padding: 2rem;
-                    border-radius: 50%;
-                    /* top: -4rem;
-                    left: 10rem; */
-                    top: -15%;
-                    left: 35%;
-                }
-                
-                .detailed .image-container {
-                    padding: 1.9rem;
-                }
-                
-                .custom .image-container {
-                    padding: 1.5rem;
-                }
+                /*  */
                 
                 .boost {
                     background-color: var(--dviolet);
@@ -367,10 +334,4 @@
                 
                 .social-media-links img {
                     width: 1.5rem;
-                }
-                
-                @media screen and (min-width:768px) {
-                    main {
-                        min-width: 100%;
-                    }
                 }
