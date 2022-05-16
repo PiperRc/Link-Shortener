@@ -1,8 +1,9 @@
-const hamburger = document.querySelector('.navbar-toggler');
-const heroImg = document.querySelector('main section:nth-child(2)');
+// navbar
 
-hamburger.addEventListener('click', () => {
-    heroImg.classList.toggle('hero-img-removed');
+const hamburger=document.querySelector('.hamburger');
+const navLinks=document.querySelector('.nav-links');
 
-
+hamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('nav-effect');
 })
+// 
