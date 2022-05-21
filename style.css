@@ -208,6 +208,9 @@ header {
     color:white;
     border-radius: 0.5rem;
 }
+.link-container button:hover{
+    cursor: pointer;
+}
 
 .link{
     background-color: white;
@@ -218,11 +221,12 @@ header {
 }
 .link p:nth-child(1){
     border-bottom: 1px solid var(--gray);
-    padding:.6rem;
+   
 }
 .link p:nth-child(2){
 padding:.6rem;
 padding-bottom: 0;
+
 }
 
 

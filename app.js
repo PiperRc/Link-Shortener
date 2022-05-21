@@ -76,6 +76,13 @@ function createLinkContainer() {
   copyBtn.innerHTML = "Copy"
 
 
+  // create Event Listener
+  copyBtn.addEventListener('click', async () => {
+    await navigator.clipboard.writeText(secondP.innerHTML)
+    copyBtn.innerHTML = 'Copied!'
+    copyBtn.style.backgroundColor = 'var(--dViolet)'
+  })
+
   // append button to container
   copyBtnContainer.append(copyBtn);
 
@@ -89,15 +96,5 @@ function createLinkContainer() {
 
   // append outerdiv after inputLinkContainer
   inputLinkContainer.after(newDiv);
+
 }
-// copy button
-const Btn=document.querySelector('.copyBtn-container button');
-
-
-Btn.addEventListener('click',()=>{
-  let content=document.querySelector('.shorten-link').value;
-  navigator.clipboard.writeText(content)
-  .then(()=>{
-    console.log('copied!')
-  })
-})
