@@ -32,19 +32,6 @@ nav {
     border: 1px solid red;
 }
 
-/* .navbar-brand {
-    font-size: 2.5rem;
-    font-weight: 700;
-    padding-left: 1.5rem;
-    padding-top: 2rem;
-
-} */
-
-/* .navbar-brand a {
-    text-decoration: none;
-    color: black;
-} */
-
 .navbar-brand {
     padding-top: 2.5rem;
     padding-bottom: 1.4rem;
@@ -69,13 +56,9 @@ nav {
 .nav-links {
     font-size: 1.7rem;
     display: none;
-    /* border:1px solid plum; */
-    /* affects the ul */
-
     justify-content: center;
-
-
 }
+
 
 /* toggle nav */
 .nav-effect {
@@ -122,19 +105,7 @@ nav {
     /* login */
     padding-top: 3rem;
 }
-
-
-/*  */
-
-/* .header-img{
-    background-image: url(images/illustration-working.svg);
-    width:20rem;
-    height:5rem;
-    border:1px solid paleturquoise;
-} */
-
-
-
+/* header */
 .header-img {
     overflow-x: hidden;
 }
@@ -171,12 +142,12 @@ header {
     margin-bottom: 6rem;
 }
 
+/* inputLink */
 .inputLinkContainer {
     display: flex;
     justify-content: center;
     font-family: 'Poppins';
-    position: relative;
-    z-index: 1;
+    background: linear-gradient(white 50%,var(--gray) 50%,var(--gray));
 
 }
 
@@ -189,12 +160,7 @@ header {
 
 }
 
-.inputLink div:nth-child(1) {
-    text-align: center;
-}
-
-
-.inputLink div:nth-child(2) {
+.inputLink div {
     text-align: center;
 }
 
@@ -206,7 +172,6 @@ header {
     border-radius: 0.5rem;
 }
 
-
 .inputLink button{
     width: 100%;
     font-size: 1.8rem;
@@ -217,16 +182,64 @@ header {
     color:white;
     border-radius: 0.5rem;
 }
-
-
-.info-section{
-    background-color:aquamarine;
-    background-color: var(--gray);
-    padding-top:12rem;
-    position:relative;
-    top:-7rem;
+.inputLink button:hover{
+    cursor: pointer;
 }
 
+/*link contaner activated by button*/
+.link-container{
+    display: flex;
+    justify-content: center;
+    padding-top:2rem;
+    background-color: var(--gray);
+}
+.copyBtn-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom:1.5rem;
+}
+.link-container button{
+    width: 95%;
+    font-size: 1.8rem;
+    font-family: 'Poppins';
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: var(--cyan);
+    color:white;
+    border-radius: 0.5rem;
+}
+
+.link{
+    background-color: white;
+    position: relative;
+    font-size:1.8rem;
+    width:90%;
+    border-radius: .5rem;
+}
+.link p:nth-child(1){
+    border-bottom: 1px solid var(--gray);
+    padding:.6rem;
+}
+.link p:nth-child(2){
+padding:.6rem;
+padding-bottom: 0;
+}
+
+
+/*  */
+
+.info-section{
+    
+    background-color: var(--gray);
+    padding-top:12rem;
+}
+.advanced h2{
+    text-align: center;
+}
+
+.advanced p{
+    text-align: center;
+}
 
 /* media queries */
 
