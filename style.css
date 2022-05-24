@@ -26,6 +26,8 @@ body {
     --vDviolet: hsl(260, 8%, 14%)
 }
 
+
+
 /* navbar */
 nav {
     position: relative;
@@ -105,6 +107,7 @@ nav {
     /* login */
     padding-top: 3rem;
 }
+
 /* header */
 .header-img {
     overflow-x: hidden;
@@ -147,103 +150,161 @@ header {
     display: flex;
     justify-content: center;
     font-family: 'Poppins';
-    background: linear-gradient(white 50%,var(--gray) 50%,var(--gray));
-
+    border: 1px solid red;
 }
+
+.inputLinkContainer-background {
+    /* original background color */
+    background: linear-gradient(white 50%, var(--gray) 50%);
+}
+
+.inputLinkContainer-noLink {
+    /* added when there is no link */
+    background: linear-gradient(white 25%, var(--gray) 10%);
+}
+
 
 .inputLink {
     border: 1px solid purple;
     width: 90%;
     background-color: var(--vDviolet);
     padding: 1.7rem;
+    /* this causes the elements the input and button to center */
     border-radius: 0.5rem;
 
 }
 
-.inputLink div {
-    text-align: center;
-}
-
 .inputLink input {
-
     font-size: 1.8rem;
     padding: 1rem;
     width: 100%;
     border-radius: 0.5rem;
 }
 
-.inputLink button{
+.inputLink button {
     width: 100%;
     font-size: 1.8rem;
     font-family: 'Poppins';
     margin-top: 1rem;
     padding: 0.5rem;
     background-color: var(--cyan);
-    color:white;
+    color: white;
     border-radius: 0.5rem;
 }
-.inputLink button:hover{
+
+.inputLink button:hover {
     cursor: pointer;
 }
 
+.placeholder-color::placeholder {
+    /* will change the placeholder text when no link is present */
+    color: var(--red);
+
+}
+
+.no-link-text::before {
+    /* will add the text when no link present */
+    content: "Please add a link";
+    color: var(--red);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
 /*link contaner activated by button*/
-.link-container{
+
+.loader {
+    /* loader */
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.link-container {
     display: flex;
     justify-content: center;
-    padding-top:2rem;
+    padding-top: 2rem;
     background-color: var(--gray);
 }
-.copyBtn-container{
+
+.copyBtn-container {
     display: flex;
     justify-content: center;
-    padding-bottom:1.5rem;
+    padding-bottom: 1.5rem;
 }
-.link-container button{
+
+.link-container button {
     width: 95%;
     font-size: 1.8rem;
     font-family: 'Poppins';
     margin-top: 1rem;
     padding: 0.5rem;
     background-color: var(--cyan);
-    color:white;
+    color: white;
     border-radius: 0.5rem;
 }
-.link-container button:hover{
+
+.link-container button:hover {
     cursor: pointer;
 }
 
-.link{
+.link {
     background-color: white;
     position: relative;
-    font-size:1.8rem;
-    width:90%;
+    font-size: 1.8rem;
+    width: 90%;
     border-radius: .5rem;
 }
-.link p:nth-child(1){
+
+.link p:nth-child(1) {
     border-bottom: 1px solid var(--gray);
-   
+    padding: .6rem;
+
 }
-.link p:nth-child(2){
-padding:.6rem;
-padding-bottom: 0;
+
+.link p:nth-child(2) {
+    padding: .6rem;
+    padding-bottom: 0;
 
 }
 
 
 /*  */
 
-.info-section{
-    
+.info-section {
+
     background-color: var(--gray);
-    padding-top:12rem;
-}
-.advanced h2{
-    text-align: center;
+    padding-top: 6rem;
 }
 
-.advanced p{
+.advanced h2 {
     text-align: center;
+    font-size: 2.5rem;
 }
+
+.advanced p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: var(--vDviolet);
+}
+
+
+
 
 /* media queries */
 
