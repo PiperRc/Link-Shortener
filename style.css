@@ -303,8 +303,51 @@ header {
     color: var(--vDviolet);
 }
 
+/* blocks */
+.blocks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
 
 
+.blocks section{
+    background-color: white;
+    width:90%;
+    border-radius: .5rem;
+    margin-bottom: 10rem;
+    padding:1.8rem;  /* this gets the centering I want */
+    position: relative;
+   
+
+}
+
+.blocks h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 6rem;
+    padding-bottom:1.8rem;
+}
+
+.blocks p{
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 3rem;
+}
+
+.blocks .logo-container{
+    background-color: var(--dViolet);
+    text-align: center;
+    width: 9rem;
+    border-radius: 50%;
+    padding: 2rem;
+    /* to position the logo */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-4rem;
+}
 
 /* media queries */
 
