@@ -155,7 +155,7 @@ header {
     display: flex;
     justify-content: center;
     font-family: 'Poppins';
-    border: 1px solid red;
+  
 }
 
 .inputLinkContainer-background {
@@ -315,6 +315,7 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 10rem;
+
    
 }
 
@@ -322,6 +323,7 @@ header {
 .blocks section{
     background-color: white;
     width:90%;
+    max-width: 310px;
     border-radius: .5rem;
     margin-bottom: 10rem;
     padding:1.8rem;  /* this gets the centering I want */
@@ -509,6 +511,11 @@ footer a{
         padding: 0.6rem 3rem;
         border-radius: 3rem;
 
+    }
+    /* blocks */
+    .blocks p,
+    .blocks h2{
+        text-align: left;
     }
 
 
