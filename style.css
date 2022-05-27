@@ -155,6 +155,7 @@ header {
     display: flex;
     justify-content: center;
     font-family: 'Poppins';
+    border: 1px solid green;
   
 }
 
@@ -172,6 +173,7 @@ header {
 .inputLink {
     border: 1px solid purple;
     width: 90%;
+    max-width: 1000px;
     background-color: var(--vDviolet);
     padding: 1.7rem;
     /* this causes the elements the input and button to center */
@@ -449,7 +451,7 @@ footer a{
     }
 
     .nav-links {
-        display: flex;
+        display: block;
     }
 
     .nav-links ul {
@@ -501,11 +503,7 @@ footer a{
         padding-right: 2rem;
     }
 
-    .nav-links ul li:nth-child(3) {
-        /* resources */
-        padding-right: 55rem;
-    }
-
+   
     .nav-links .signUp {
 
         padding: 0.6rem 3rem;
@@ -517,6 +515,30 @@ footer a{
     .blocks h2{
         text-align: left;
     }
+/* input link */
+.inputLink{
+  
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1.75fr .25fr;
+    padding:3rem;
+    padding-right:3.5rem;
+    padding-left: 3.5rem;
+}
 
+.inputLink input{
+ 
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right:1.5rem;
+    font-size: 1.5rem;
+}
+
+.inputLink button{
+    margin-top: 0;
+    padding:0.7rem;
+}
 
 }
