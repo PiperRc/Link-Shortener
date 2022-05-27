@@ -31,13 +31,14 @@ body {
 /* navbar */
 nav {
     position: relative;
-    border: 1px solid red;
+ 
 }
 
 .navbar-brand {
     padding-top: 2.5rem;
     padding-bottom: 1.4rem;
     padding-left: 1.5rem;
+   
 }
 
 .hamburger {
@@ -59,6 +60,7 @@ nav {
     font-size: 1.7rem;
     display: none;
     justify-content: center;
+   
 }
 
 
@@ -87,6 +89,13 @@ nav {
     color: white;
 }
 
+.nav-links div{
+    border-top: 1px solid var(--gray)
+}
+.nav-links .login{
+    text-align: center;
+}
+
 .nav-links .signUp {
     background-color: var(--cyan);
     padding: 0.6rem 9rem;
@@ -103,10 +112,6 @@ nav {
     padding-top: 3rem;
 }
 
-.nav-links ul li:nth-child(4) {
-    /* login */
-    padding-top: 3rem;
-}
 
 /* header */
 .header-img {
@@ -129,11 +134,11 @@ nav {
     margin-bottom: 3rem;
 }
 
-.header-content div {
+.header-content div,.boost div {
     text-align: center;
 }
 
-.header-content a {
+.header-content a,.boost a {
     background-color: var(--cyan);
     text-decoration: none;
     padding: 1rem 4rem;
@@ -197,7 +202,7 @@ header {
 }
 
 .placeholder-color::placeholder {
-    /* will change the placeholder text when no link is present */
+    /* will change the placeholder text color when no link is present */
     color: var(--red);
 
 }
@@ -304,11 +309,13 @@ header {
 }
 
 /* blocks */
+
 .blocks{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10rem;
+   
 }
 
 
@@ -347,6 +354,87 @@ header {
     left: 50%;
     transform: translateX(-50%);
     top:-4rem;
+}
+
+/* boost */
+.boost{
+    background-color: var(--dViolet);
+   padding-bottom: 8rem;
+
+}
+
+
+.boost h2{
+    color: white;
+    text-align: center;
+    font-size: 2.3rem;
+    padding-top:8rem;
+    padding-bottom:2rem;
+}
+
+
+.boost a{
+    color:white;
+    /* the rest of the markup is in the header csss */
+}
+
+/* footer */
+
+footer{
+    color:white;
+    background-color: var(--vDviolet);
+    padding:6rem;
+}
+.filter{
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(137deg) brightness(104%) contrast(101%);
+}
+
+footer .footer-brand{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+footer h2{
+    color:white;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+
+footer ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+footer li{
+text-align: center;
+font-size: 1.8rem;
+padding-bottom: .5rem;
+
+}
+
+footer a{
+    color:var(--gray);
+    text-decoration: none;
+}
+
+.social-media-links{
+   text-align: center;
+}
+
+.social-media-links img{
+    width:2.3rem;
+}
+.social-media-links a:nth-child(1),
+.social-media-links a:nth-child(2),
+.social-media-links a:nth-child(3){
+    padding-right:2.5rem;
+}
+
+.footer-features li:nth-child(3),
+.footer-resources li:nth-child(3),
+.footer-company li:nth-child(4){
+    padding-bottom: 4rem;
 }
 
 /* media queries */
