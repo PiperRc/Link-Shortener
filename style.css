@@ -31,14 +31,14 @@ body {
 /* navbar */
 nav {
     position: relative;
- 
+
 }
 
 .navbar-brand {
     padding-top: 2.5rem;
     padding-bottom: 1.4rem;
     padding-left: 1.5rem;
-   
+
 }
 
 .hamburger {
@@ -60,7 +60,7 @@ nav {
     font-size: 1.7rem;
     display: none;
     justify-content: center;
-   
+
 }
 
 
@@ -89,10 +89,11 @@ nav {
     color: white;
 }
 
-.nav-links div{
+.nav-links div {
     border-top: 1px solid var(--gray)
 }
-.nav-links .login{
+
+.nav-links .login {
     text-align: center;
 }
 
@@ -134,11 +135,13 @@ nav {
     margin-bottom: 3rem;
 }
 
-.header-content div,.boost div {
+.header-content div,
+.boost div {
     text-align: center;
 }
 
-.header-content a,.boost a {
+.header-content a,
+.boost a {
     background-color: var(--cyan);
     text-decoration: none;
     padding: 1rem 4rem;
@@ -156,7 +159,7 @@ header {
     justify-content: center;
     font-family: 'Poppins';
     border: 1px solid green;
-  
+
 }
 
 .inputLinkContainer-background {
@@ -173,7 +176,7 @@ header {
 .inputLink {
     border: 1px solid purple;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1100px;
     background-color: var(--vDviolet);
     padding: 1.7rem;
     /* this causes the elements the input and button to center */
@@ -290,7 +293,7 @@ header {
 }
 
 
-/*  */
+/*  info-section*/
 
 .info-section {
 
@@ -298,8 +301,14 @@ header {
     padding-top: 6rem;
 }
 
+.advanced {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .advanced h2 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 2.5rem;
 }
 
@@ -308,46 +317,49 @@ header {
     font-size: 1.5rem;
     padding-top: 1rem;
     color: var(--vDviolet);
+    max-width: 458px;
 }
 
 /* blocks */
 
-.blocks{
+.blocks {
+    border: 3px solid green;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10rem;
 
-   
+
 }
 
 
-.blocks section{
+.blocks section {
     background-color: white;
-    width:90%;
+    width: 90%;
     max-width: 310px;
     border-radius: .5rem;
     margin-bottom: 10rem;
-    padding:1.8rem;  /* this gets the centering I want */
+    padding: 1.8rem;
+    /* this gets the centering I want */
     position: relative;
-   
+
 
 }
 
-.blocks h2{
+.blocks h2 {
     text-align: center;
     font-size: 2rem;
     padding-top: 6rem;
-    padding-bottom:1.8rem;
+    padding-bottom: 1.8rem;
 }
 
-.blocks p{
+.blocks p {
     text-align: center;
     font-size: 1.4rem;
     padding-bottom: 3rem;
 }
 
-.blocks .logo-container{
+.blocks .logo-container {
     background-color: var(--dViolet);
     text-align: center;
     width: 9rem;
@@ -357,93 +369,96 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top:-4rem;
+    top: -4rem;
 }
 
 /* boost */
-.boost{
+.boost {
     background-color: var(--dViolet);
-   padding-bottom: 8rem;
+    padding-bottom: 8rem;
 
 }
 
 
-.boost h2{
+.boost h2 {
     color: white;
     text-align: center;
     font-size: 2.3rem;
-    padding-top:8rem;
-    padding-bottom:2rem;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
 }
 
 
-.boost a{
-    color:white;
+.boost a {
+    color: white;
     /* the rest of the markup is in the header csss */
 }
 
 /* footer */
 
-footer{
-    color:white;
+footer {
+    color: white;
     background-color: var(--vDviolet);
-    padding:6rem;
+    padding: 6rem;
 }
-.filter{
+
+.filter {
     filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(137deg) brightness(104%) contrast(101%);
 }
 
-footer .footer-brand{
+footer .footer-brand {
     text-align: center;
     padding-bottom: 4rem;
 }
 
-footer h2{
-    color:white;
+footer h2 {
+    color: white;
     text-align: center;
     font-size: 1.8rem;
     padding-bottom: 2rem;
 }
 
-footer ul{
+footer ul {
     list-style-type: none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
-footer li{
-text-align: center;
-font-size: 1.8rem;
-padding-bottom: .5rem;
+
+footer li {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: .5rem;
 
 }
 
-footer a{
-    color:var(--gray);
+footer a {
+    color: var(--gray);
     text-decoration: none;
 }
 
-.social-media-links{
-   text-align: center;
+.social-media-links {
+    text-align: center;
 }
 
-.social-media-links img{
-    width:2.3rem;
+.social-media-links img {
+    width: 2.3rem;
 }
+
 .social-media-links a:nth-child(1),
 .social-media-links a:nth-child(2),
-.social-media-links a:nth-child(3){
-    padding-right:2.5rem;
+.social-media-links a:nth-child(3) {
+    padding-right: 2.5rem;
 }
 
 .footer-features li:nth-child(3),
 .footer-resources li:nth-child(3),
-.footer-company li:nth-child(4){
+.footer-company li:nth-child(4) {
     padding-bottom: 4rem;
 }
 
 /* media queries */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:900px) {
 
     /* navbar */
     .hamburger {
@@ -503,42 +518,142 @@ footer a{
         padding-right: 2rem;
     }
 
-   
+
     .nav-links .signUp {
 
         padding: 0.6rem 3rem;
         border-radius: 3rem;
 
     }
+
     /* blocks */
     .blocks p,
-    .blocks h2{
+    .blocks h2 {
         text-align: left;
     }
-/* input link */
-.inputLink{
-  
-    /* display: flex;
-    justify-content: space-between; */
-    display: grid;
-    grid-template-columns: 1.75fr .25fr;
-    padding:3rem;
-    padding-right:3.5rem;
-    padding-left: 3.5rem;
-}
 
-.inputLink input{
- 
-    padding-top:1rem;
-    padding-bottom: 1rem;
+    /* header */
+
+    .header-img {
+        grid-area: image;
+    }
+
+    .header-content {
+        grid-area: heading;
+    }
+
+    header {
+        border: 1px solid blue;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+        grid-template-areas:
+         "heading image"
+         
+
+    }
+
+
+
+    /* input link */
+    .inputLink {
+
+
+        display: grid;
+        grid-template-columns: 1.8fr .4fr;
+
+        padding: 3rem;
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
+    }
+
+    .inputLink input {
+
+        /* padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     padding-left: 1.5rem;
-    padding-right:1.5rem;
-    font-size: 1.5rem;
-}
+    padding-right: 1.5rem; */
 
-.inputLink button{
-    margin-top: 0;
-    padding:0.7rem;
-}
+        font-size: 2.5rem;
+        padding: 1.2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
 
+    .inputLink button {
+        margin-top: 0;
+        padding: 1rem;
+        margin-left: 1rem;
+        font-size: 2.5rem;
+    }
+
+    /* info-section */
+
+    .info-section {
+        padding-top: 10rem;
+    }
+
+    /* advanced */
+    .advanced h2 {
+        font-size: 4.5rem;
+    }
+
+    .advanced p {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 1rem;
+        color: var(--vDviolet);
+        max-width: 550px;
+    }
+
+    /* blocks */
+    .blocks {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .blocks section {
+        margin-right: 4rem;
+
+    }
+
+    .detailed {
+        margin-top: 9rem;
+    }
+
+    .fully {
+        margin-top: 20rem;
+    }
+
+    .blocks .logo-container {
+        left: 25%;
+
+    }
+
+    /* boost */
+    .boost h2 {
+        font-size: 4rem;
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+    }
+
+    /* footer */
+    footer {
+        display: grid;
+        padding: 0;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        grid-template-columns: 4.2fr 1.7fr 1.5fr 1.7fr 3fr;
+    }
+
+    footer h2,
+    footer li {
+        text-align: left;
+    }
+
+
+    footer .footer-brand {
+        /* padding-right:17rem; */
+    }
 }
