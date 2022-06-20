@@ -26,19 +26,15 @@ body {
     --vDviolet: hsl(260, 8%, 14%)
 }
 
-
-
 /* navbar */
 nav {
     position: relative;
-
 }
 
 .navbar-brand {
     padding-top: 2.5rem;
     padding-bottom: 1.4rem;
     padding-left: 1.5rem;
-
 }
 
 .hamburger {
@@ -60,7 +56,6 @@ nav {
     font-size: 1.7rem;
     display: none;
     justify-content: center;
-
 }
 
 
@@ -80,14 +75,12 @@ nav {
     background-color: var(--dViolet);
     width: 90%;
     border-radius: 1rem;
-
 }
 
 
 .nav-links a {
     text-decoration: none;
     color: white;
-
 }
 
 .nav-links div {
@@ -122,6 +115,7 @@ nav {
 
 .header-img img {
     width: 145%;
+    max-width: 1000px;
     padding-left: 2rem;
 }
 
@@ -162,8 +156,6 @@ header {
     display: flex;
     justify-content: center;
     font-family: 'Poppins';
-    /* border: 1px solid green; */
-
 }
 
 .inputLinkContainer-background {
@@ -178,14 +170,12 @@ header {
 
 
 .inputLink {
-    /* border: 1px solid purple; */
     width: 90%;
     max-width: 1100px;
     background-color: var(--vDviolet);
     padding: 1.7rem;
-    /* this causes the elements the input and button to center */
+    /* ^^ this causes the elements in the input and button to center */
     border-radius: 0.5rem;
-
 }
 
 .inputLink input {
@@ -213,7 +203,6 @@ header {
 .placeholder-color::placeholder {
     /* will change the placeholder text color when no link is present */
     color: var(--red);
-
 }
 
 .no-link-text::before {
@@ -287,20 +276,17 @@ header {
 .link p:nth-child(1) {
     border-bottom: 1px solid var(--gray);
     padding: .6rem;
-
 }
 
 .link p:nth-child(2) {
     padding: .6rem;
     padding-bottom: 0;
-
 }
 
 
 /*  info-section*/
 
 .info-section {
-
     background-color: var(--gray);
     padding-top: 6rem;
 }
@@ -327,28 +313,22 @@ header {
 /* blocks */
 
 .blocks {
-    /* border: 3px solid green; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10rem;
-
-
-
 }
 
 
 .blocks section {
     background-color: white;
     width: 90%;
-    max-width: 310px;
+    max-width: 500px;
     border-radius: .5rem;
     margin-bottom: 10rem;
     padding: 1.8rem;
-    /* this gets the centering I want */
+    /*^^^ this gets the centering I want */
     position: relative;
-
-
 }
 
 .blocks h2 {
@@ -372,7 +352,7 @@ header {
     width: 9rem;
     border-radius: 50%;
     padding: 2rem;
-    /* to position the logo */
+    /* to position the logo  */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -383,9 +363,8 @@ header {
 .boost {
     background-color: var(--dViolet);
     padding-bottom: 8rem;
-
+    background-image: url(images/bg-boost-desktop.svg);
 }
-
 
 .boost h2 {
     color: white;
@@ -435,7 +414,6 @@ footer li {
     text-align: center;
     font-size: 1.8rem;
     padding-bottom: .5rem;
-
 }
 
 footer a {
@@ -463,9 +441,17 @@ footer a {
     padding-bottom: 4rem;
 }
 
+.attribution{
+    text-align: center;
+    font-size: 1rem;
+    background-color: var(--vDviolet);
+    color:white;
+}
+
 /* media queries */
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:800px) {
+
 
     /* navbar */
     .hamburger {
@@ -476,18 +462,20 @@ footer a {
         display: flex;
         position: relative;
         width: 100%;
-        /* border:1px solid red; */
     }
 
     .nav-links div {
         border-top: 0;
         position: absolute;
-        right: 10rem;
+        right: .5rem;
         display: flex;
     }
 
     .nav-links ul {
         background-color: white;
+        font-size: 1.5rem;
+        flex-direction: row;
+        width: 100%;
     }
 
     .nav-links ul a {
@@ -497,14 +485,14 @@ footer a {
 
     .nav-links .signUp {
         color: white;
+        padding: 0.6rem 3rem;
+        border-radius: 3rem;
     }
 
-    .nav-links ul {
-        flex-direction: row;
-    }
 
     .nav-links li {
         padding-bottom: 0;
+        padding-right: 2rem;
     }
 
     .nav-links ul li:nth-child(1) {
@@ -517,32 +505,13 @@ footer a {
         padding-top: 0rem;
     }
 
-    /*  */
-
     nav {
         display: flex;
-        padding-left: 7rem;
-    }
-
-    .nav-links ul {
-        width: 100%;
+        padding-left: 3rem;
     }
 
     .navbar-brand {
-        padding-left: 6rem;
         padding-right: 3rem;
-    }
-
-    .nav-links li {
-        padding-right: 2rem;
-    }
-
-
-    .nav-links .signUp {
-
-        padding: 0.6rem 3rem;
-        border-radius: 3rem;
-
     }
 
     /* blocks */
@@ -555,50 +524,41 @@ footer a {
 
     .header-img {
         grid-area: image;
-    
+
     }
 
-    .header-img img{
-        width:125%;
-        padding-top:3rem;
+    .header-img img {
+        width: 125%;
+        padding-top: 7rem;
+        padding-left: 0;
     }
 
     .header-content {
         grid-area: heading;
         padding-top: 12rem;
-        padding-left: 13rem;
-
+        padding-left: 5rem;
     }
 
     header {
-        /* border: 1px solid blue; */
         display: grid;
-
         grid-template-columns: 1fr 1fr;
-
         grid-template-areas:
             "heading image"
-
-
     }
-
-
 
     .header-content h1 {
         text-align: left;
-        font-size: 7.2rem;
+        font-size: 4.7rem;
     }
 
     .header-content p {
         text-align: left;
-        font-size: 2.1rem;
-        width: 55rem;
+        font-size: 1.5rem;
     }
 
     .header-content div {
         text-align: left;
     }
-
 
     /* input link */
 
@@ -607,23 +567,15 @@ footer a {
     }
 
     .inputLink {
-
-
         display: grid;
-        grid-template-columns: 1.8fr .4fr;
-
+        grid-template-columns: 3fr 1fr;
+        position: relative;
         padding: 3rem;
         padding-right: 3.5rem;
         padding-left: 3.5rem;
     }
 
     .inputLink input {
-
-        /* padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; */
-
         font-size: 2.5rem;
         padding: 1.2rem;
         padding-top: 1.5rem;
@@ -635,6 +587,21 @@ footer a {
         padding: 1rem;
         margin-left: 1rem;
         font-size: 2.5rem;
+    }
+
+    .no-link-text::before {
+        content: none;
+    }
+
+    .no-link-text::after {
+        /* will add the text when no link present */
+        content: "Please add a link";
+        color: var(--red);
+        font-size: 1.2rem;
+        font-style: italic;
+        position: absolute;
+        left: 3rem;
+        bottom: 1rem;
     }
 
     /* info-section */
@@ -658,14 +625,12 @@ footer a {
 
     /* blocks */
     .blocks {
-        flex-direction: row;
-        justify-content: center;
         margin-top: 0;
-    }
-
-    .blocks section {
-        margin-right: 4rem;
-
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .detailed {
@@ -677,11 +642,17 @@ footer a {
     }
 
     .blocks .logo-container {
-        left: 25%;
-
+        left: 20%;
     }
 
     /* boost */
+
+    .boost {
+        background-image: url(images/bg-boost-desktop.svg);
+        background-position: 0 1.2rem;
+        background-repeat: no-repeat;
+    }
+
     .boost h2 {
         font-size: 4rem;
         padding-top: 6rem;
@@ -694,7 +665,7 @@ footer a {
         padding: 0;
         padding-top: 6rem;
         padding-bottom: 6rem;
-        grid-template-columns: 4.2fr 1.7fr 1.5fr 1.7fr 3fr;
+        grid-template-columns: 3fr 1.5fr 1.5fr 1.7fr 3fr
     }
 
     footer h2,
@@ -702,40 +673,61 @@ footer a {
         text-align: left;
     }
 
+    /* link-container */
 
-    footer .footer-brand {
-        /* padding-right:17rem; */
-    }
-
-    /* 
-    link-container */
-
-    .link-container{
-        /* background-color: red;; */
-    }
-    .link{
-        width:81%;
-        display:grid;
+    .link {
+        width: 81%;
+        display: grid;
         grid-template-columns: 6fr 1fr 1fr;
         align-items: center;
         padding-left: 2rem;
         padding-right: 2rem;
-    
-
-
     }
+
     .link p:nth-child(1) {
         border-bottom: 0;
-        padding:0;
-    
+        padding: 0;
     }
-    
+
     .link p:nth-child(2) {
-        padding:0;
+        padding: 0;
         padding-bottom: 0;
         padding-right: 2rem;
-        color:var(--cyan);
+        color: var(--cyan);
         font-weight: bold;
-    
+    }
+    .attribution{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    nav {
+        padding-left: 11.5rem;
+    }
+
+    header {
+        padding-left: 8rem;
+    }
+
+    .header-content h1 {
+        font-size: 7rem;
+    }
+
+    .header-content p {
+        font-size: 2.1rem;
+    }
+
+    .blocks {
+        /* top right bottom left */
+        padding: 0 10rem 0 10rem;
+    }
+
+    .blocks p {
+        font-size: 1.76rem
+    }
+
+    .blocks section {
+        padding: 1.75rem;
     }
 }
